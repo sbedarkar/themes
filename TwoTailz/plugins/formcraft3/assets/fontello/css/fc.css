@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'fc';
+  src: url('../font/fc.eot?61304469');
+  src: url('../font/fc.eot?61304469#iefix') format('embedded-opentype'),
+       url('../font/fc.woff?61304469') format('woff'),
+       url('../font/fc.ttf?61304469') format('truetype'),
+       url('../font/fc.svg?61304469#fc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fc';
+    src: url('../font/fc.svg?61304469#fc') format('svg');
+  }
+}
+*/
+ 
+html .formcraft-css [class^="icon-"]:before,
+html .formcraft-css [class*=" icon-"]:before {
+  font-family: "fc";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+html .formcraft-css .icon-trash:before { content: '\e800'; } /* '' */
+html .formcraft-css .icon-trash-empty:before { content: '\e801'; } /* '' */
+html .formcraft-css .icon-plus:before { content: '\e802'; } /* '' */
+html .formcraft-css .icon-plus-circled:before { content: '\e803'; } /* '' */
+html .formcraft-css .icon-angle-down:before { content: '\e804'; } /* '' */
+html .formcraft-css .icon-angle-up:before { content: '\e805'; } /* '' */
+html .formcraft-css .icon-cog-alt:before { content: '\e806'; } /* '' */
+html .formcraft-css .icon-cog:before { content: '\e807'; } /* '' */
+html .formcraft-css .icon-angle-circled-down:before { content: '\e808'; } /* '' */
+html .formcraft-css .icon-angle-circled-up:before { content: '\e809'; } /* '' */
+html .formcraft-css .icon-folder-open:before { content: '\e80a'; } /* '' */
+html .formcraft-css .icon-folder-open-empty:before { content: '\e80b'; } /* '' */
+html .formcraft-css .icon-ok:before { content: '\e80c'; } /* '' */
+html .formcraft-css .icon-cancel:before { content: '\e80d'; } /* '' */
+html .formcraft-css .icon-ok-circle:before { content: '\e80e'; } /* '' */
+html .formcraft-css .icon-angle-left:before { content: '\e80f'; } /* '' */
+html .formcraft-css .icon-angle-right:before { content: '\e810'; } /* '' */
+html .formcraft-css .icon-trash-1:before { content: '\e811'; } /* '' */
+html .formcraft-css .icon-pencil:before { content: '\e812'; } /* '' */
+html .formcraft-css .icon-minus:before { content: '\e813'; } /* '' */
+html .formcraft-css .icon-minus-circled:before { content: '\e814'; } /* '' */
+html .formcraft-css .icon-docs:before { content: '\e815'; } /* '' */
+html .formcraft-css .icon-mail:before { content: '\e816'; } /* '' */
+html .formcraft-css .icon-mail-alt:before { content: '\e817'; } /* '' */
+html .formcraft-css .icon-align-left:before { content: '\e818'; } /* '' */
+html .formcraft-css .icon-align-center:before { content: '\e819'; } /* '' */
+html .formcraft-css .icon-align-right:before { content: '\e81a'; } /* '' */
+html .formcraft-css .icon-doc-text:before { content: '\e81b'; } /* '' */
+html .formcraft-css .icon-up-circled:before { content: '\e81c'; } /* '' */
+html .formcraft-css .icon-upload-cloud:before { content: '\e81d'; } /* '' */
+html .formcraft-css .icon-download-cloud:before { content: '\e81e'; } /* '' */
+html .formcraft-css .icon-help:before { content: '\e81f'; } /* '' */
+html .formcraft-css .icon-help-circled:before { content: '\e820'; } /* '' */
+html .formcraft-css .icon-star:before { content: '\e821'; } /* '' */
+html .formcraft-css .icon-star-empty:before { content: '\e822'; } /* '' */
+html .formcraft-css .icon-heart:before { content: '\e823'; } /* '' */
+html .formcraft-css .icon-spin5:before { content: '\e824'; } /* '' */
+html .formcraft-css .icon-move:before { content: '\e825'; } /* '' */
+html .formcraft-css .icon-up-circled2:before { content: '\e826'; } /* '' */
+html .formcraft-css .icon-quote-right:before { content: '\e827'; } /* '' */
+html .formcraft-css .icon-quote-left:before { content: '\e828'; } /* '' */
+html .formcraft-css .icon-bold:before { content: '\e829'; } /* '' */
+html .formcraft-css .icon-italic:before { content: '\e82a'; } /* '' */
+html .formcraft-css .icon-list-numbered:before { content: '\e82b'; } /* '' */
+html .formcraft-css .icon-list-bullet:before { content: '\e82c'; } /* '' */
+html .formcraft-css .icon-cw:before { content: '\e82d'; } /* '' */
+html .formcraft-css .icon-ccw:before { content: '\e82e'; } /* '' */
+html .formcraft-css .icon-underline:before { content: '\e82f'; } /* '' */
+html .formcraft-css .icon-strike:before { content: '\e830'; } /* '' */
+html .formcraft-css .icon-cancel-circled:before { content: '\e831'; } /* '' */
+html .formcraft-css .icon-code:before { content: '\e832'; } /* '' */
+html .formcraft-css .icon-picture:before { content: '\e833'; } /* '' */
+html .formcraft-css .icon-link:before { content: '\e834'; } /* '' */
+html .formcraft-css .icon-youtube-play:before { content: '\e835'; } /* '' */
+html .formcraft-css .icon-indent-left:before { content: '\e836'; } /* '' */
+html .formcraft-css .icon-indent-right:before { content: '\e837'; } /* '' */
+html .formcraft-css .icon-align-justify:before { content: '\e838'; } /* '' */
+html .formcraft-css .icon-unlink:before { content: '\e839'; } /* '' */
+html .formcraft-css .icon-help-circled-1:before { content: '\e83a'; } /* '' */
+html .formcraft-css .icon-star-1:before { content: '\e83b'; } /* '' */
+html .formcraft-css .icon-star-filled:before { content: '\e83c'; } /* '' */
+html .formcraft-css .icon-desktop:before { content: '\e83d'; } /* '' */
+html .formcraft-css .icon-doc-text-inv:before { content: '\e83e'; } /* '' */
+html .formcraft-css .icon-down-circled2:before { content: '\e83f'; } /* '' */
+html .formcraft-css .icon-puzzle:before { content: '\e840'; } /* '' */
+html .formcraft-css .icon-shuffle:before { content: '\e841'; } /* '' */
+html .formcraft-css .icon-emo-unhappy:before { content: '\e842'; } /* '' */
+html .formcraft-css .icon-search:before { content: '\e843'; } /* '' */
+html .formcraft-css .icon-export:before { content: '\e844'; } /* '' */
+html .formcraft-css .icon-export-alt:before { content: '\e845'; } /* '' */
+html .formcraft-css .icon-chart:before { content: '\e846'; } /* '' */
+html .formcraft-css .icon-chart-area:before { content: '\e847'; } /* '' */
+html .formcraft-css .icon-chart-bar:before { content: '\e848'; } /* '' */
+html .formcraft-css .icon-popup:before { content: '\e849'; } /* '' */
+html .formcraft-css .icon-doc:before { content: '\e84a'; } /* '' */
+html .formcraft-css .icon-right-circled2:before { content: '\e84b'; } /* '' */
+html .formcraft-css .icon-key:before { content: '\e84c'; } /* '' */
+html .formcraft-css .icon-key-outline:before { content: '\e84d'; } /* '' */
+html .formcraft-css .icon-key-1:before { content: '\e84e'; } /* '' */
+html .formcraft-css .icon-thumbs-up:before { content: '\e84f'; } /* '' */
+html .formcraft-css .icon-thumbs-down:before { content: '\e850'; } /* '' */
+html .formcraft-css .icon-thumbs-up-alt:before { content: '\e851'; } /* '' */
+html .formcraft-css .icon-thumbs-down-alt:before { content: '\e852'; } /* '' */
+html .formcraft-css .icon-thumbs-up-1:before { content: '\e853'; } /* '' */
+html .formcraft-css .icon-thumbs-down-1:before { content: '\e854'; } /* '' */
+html .formcraft-css .icon-docs-1:before { content: '\e855'; } /* '' */
+html .formcraft-css .icon-doc-add:before { content: '\e856'; } /* '' */
+html .formcraft-css .icon-calendar:before { content: '\e857'; } /* '' */
+html .formcraft-css .icon-user:before { content: '\e858'; } /* '' */
+html .formcraft-css .icon-ok-circled2:before { content: '\e859'; } /* '' */
+html .formcraft-css .icon-cancel-circled2:before { content: '\e85a'; } /* '' */
+html .formcraft-css .icon-info-circled:before { content: '\e85b'; } /* '' */
+html .formcraft-css .icon-attach:before { content: '\e85c'; } /* '' */
+html .formcraft-css .icon-lock:before { content: '\e85d'; } /* '' */
+html .formcraft-css .icon-flag:before { content: '\e85e'; } /* '' */
+html .formcraft-css .icon-chat:before { content: '\e85f'; } /* '' */
+html .formcraft-css .icon-phone:before { content: '\e860'; } /* '' */
+html .formcraft-css .icon-clock:before { content: '\e861'; } /* '' */
+html .formcraft-css .icon-clock-1:before { content: '\e862'; } /* '' */
+html .formcraft-css .icon-bookmark-empty:before { content: '\e863'; } /* '' */
+html .formcraft-css .icon-home:before { content: '\e864'; } /* '' */
+html .formcraft-css .icon-file-pdf:before { content: '\e865'; } /* '' */
+html .formcraft-css .icon-file-word:before { content: '\e866'; } /* '' */
+html .formcraft-css .icon-file-excel:before { content: '\e867'; } /* '' */
+html .formcraft-css .icon-history:before { content: '\e868'; } /* '' */
+html .formcraft-css .icon-arrows-cw:before { content: '\e869'; } /* '' */
+html .formcraft-css .icon-scissors:before { content: '\e86a'; } /* '' */
+html .formcraft-css .icon-crop:before { content: '\e86b'; } /* '' */
+html .formcraft-css .icon-columns:before { content: '\e86c'; } /* '' */
+html .formcraft-css .icon-paste:before { content: '\e86d'; } /* '' */
+html .formcraft-css .icon-circle-notch:before { content: '\e86e'; } /* '' */
+html .formcraft-css .icon-circle-thin:before { content: '\e86f'; } /* '' */
+html .formcraft-css .icon-chart-line:before { content: '\e870'; } /* '' */
+html .formcraft-css .icon-credit-card:before { content: '\e871'; } /* '' */
+html .formcraft-css .icon-dropbox:before { content: '\e872'; } /* '' */
+html .formcraft-css .icon-facebook:before { content: '\e873'; } /* '' */
+html .formcraft-css .icon-facebook-squared:before { content: '\e874'; } /* '' */
+html .formcraft-css .icon-flickr:before { content: '\e875'; } /* '' */
+html .formcraft-css .icon-file-powerpoint:before { content: '\e876'; } /* '' */
+html .formcraft-css .icon-git:before { content: '\e877'; } /* '' */
+html .formcraft-css .icon-github:before { content: '\e878'; } /* '' */
+html .formcraft-css .icon-file-image:before { content: '\e879'; } /* '' */
+html .formcraft-css .icon-github-circled:before { content: '\e87a'; } /* '' */
+html .formcraft-css .icon-file-archive:before { content: '\e87b'; } /* '' */
+html .formcraft-css .icon-linkedin-squared:before { content: '\e87c'; } /* '' */
+html .formcraft-css .icon-pinterest-circled:before { content: '\e87d'; } /* '' */
+html .formcraft-css .icon-reddit:before { content: '\e87e'; } /* '' */
+html .formcraft-css .icon-skype:before { content: '\e87f'; } /* '' */
+html .formcraft-css .icon-file-audio:before { content: '\e880'; } /* '' */
+html .formcraft-css .icon-twitter:before { content: '\e881'; } /* '' */
+html .formcraft-css .icon-wordpress:before { content: '\e882'; } /* '' */
+html .formcraft-css .icon-file-video:before { content: '\e883'; } /* '' */
+html .formcraft-css .icon-lemon:before { content: '\e884'; } /* '' */
+html .formcraft-css .icon-cw-1:before { content: '\e885'; } /* '' */
+html .formcraft-css .icon-level-down:before { content: '\e886'; } /* '' */
+html .formcraft-css .icon-file-code:before { content: '\e887'; } /* '' */
+html .formcraft-css .icon-signal:before { content: '\e888'; } /* '' */
+html .formcraft-css .icon-folder-empty:before { content: '\e889'; } /* '' */
+html .formcraft-css .icon-mic:before { content: '\e88a'; } /* '' */
+html .formcraft-css .icon-volume-up:before { content: '\e88b'; } /* '' */
+html .formcraft-css .icon-lightbulb:before { content: '\e88c'; } /* '' */
+html .formcraft-css .icon-laptop:before { content: '\e88d'; } /* '' */
+html .formcraft-css .icon-tablet:before { content: '\e88e'; } /* '' */
+html .formcraft-css .icon-mobile:before { content: '\e88f'; } /* '' */
+html .formcraft-css .icon-globe:before { content: '\e890'; } /* '' */
+html .formcraft-css .icon-check-empty:before { content: '\e891'; } /* '' */
+html .formcraft-css .icon-off:before { content: '\e892'; } /* '' */
+html .formcraft-css .icon-briefcase:before { content: '\e893'; } /* '' */
+html .formcraft-css .icon-smile:before { content: '\e894'; } /* '' */
+html .formcraft-css .icon-frown:before { content: '\e895'; } /* '' */
+html .formcraft-css .icon-meh:before { content: '\e896'; } /* '' */

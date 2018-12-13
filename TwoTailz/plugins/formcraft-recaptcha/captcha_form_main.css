@@ -1,0 +1,17 @@
+.form-element-type-reCaptcha.error-field .captcha-placeholder
+{
+	border: 1px solid red;
+}
+.form-element-type-reCaptcha .captcha-placeholder
+{
+	border: 1px solid transparent;
+	border-radius: 2px;
+	width: 304px;
+	height: 78px;
+	transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%;	
+}
+.captcha-placeholder img
+{
+	opacity: 0;
+}

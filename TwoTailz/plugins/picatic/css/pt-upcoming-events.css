@@ -1,0 +1,356 @@
+/* ==========================================================================
+  Picatic Upcoming Events Widget Styles
+========================================================================== */
+/* ==========================================================================
+
+  TABLE OF CONTENTS
+
+  00 - Animations
+  01 - Event box element
+
+========================================================================== */
+
+
+/* ==========================================================================
+  00 - Animations
+========================================================================== */
+@-webkit-keyframes eventBoxMenu {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-216px);
+  }
+}
+@keyframes eventBoxMenu {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-216px);
+    -moz-transform: translateY(-216px);
+    -ms-transform: translateY(-216px);
+    -o-transform: translateY(-216px);
+    transform: translateY(-216px);
+  }
+}
+
+
+/* ==========================================================================
+  01 - Event Box Element
+========================================================================== */
+.pt-upcoming-events {
+  *zoom: 1;
+}
+.pt-upcoming-events:before,
+.pt-upcoming-events:after {
+  display: table;
+  content: "";
+}
+.pt-upcoming-events:after {
+  clear: both;
+}
+.pt-event-box-container {
+  float: left;
+  margin: 0 15px 30px;
+  width: 360px;
+  max-width: 100%;
+}
+.pt-event-box {
+  border-radius: 2px;
+  font-family: 'Avenir Next W01', 'Avenir Next', 'Avenir', sans-serif;
+  max-width: 360px;
+  overflow: hidden;
+  text-align: left;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.pt-event-box * {
+  font-family: 'Avenir Next W01', 'Avenir Next', 'Avenir', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pt-event-box a {
+  border: none;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.pt-event-box-footer::before {
+  background-color: rgba(0, 0, 0, 0.54);
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.pt-event-box-footer:hover::before {
+  height: 344px;
+  z-index: 5;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.pt-event-box-footer:hover .pt-event-box-menu {
+  display: block;
+  -webkit-animation-name: eventBoxMenu;
+  animation-name: eventBoxMenu;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.pt-event-box-img {
+  border-radius: 2px 2px 0 0;
+  cursor: pointer;
+  height: 168px;
+  overflow: hidden;
+  padding: 0 16px 32px 32px;
+  position: relative;
+  z-index: 0;
+}
+.pt-event-box-img .pt-event-box-cover-photo {
+  background: none no-repeat center top / cover #070826;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.pt-event-box-img .pt-event-box-cover-photo a {
+  display: block;
+  height: 168px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.87) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.87) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.87) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#42000000', endColorstr='#de000000', GradientType=0);
+}
+.pt-event-box-content {
+  bottom: 32px;
+  left: 32px;
+  position: absolute;
+  right: 16px;
+  z-index: 4;
+}
+.pt-event-box-content .pt-event-box-title {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Avenir Next W01', 'Avenir Next', 'Avenir', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -1px;
+  line-height: 20px;
+  margin: 0 0 4px;
+}
+.pt-event-box-content .pt-event-box-title a ,
+.pt-event-box-content .pt-event-box-by a {
+  display: block;
+}
+.pt-event-box-content a,
+.pt-event-box-content a:hover {
+  color: #fff;
+}
+.pt-event-box-by {
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: 'Avenir Next W01', 'Avenir Next', 'Avenir', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.pt-event-box-date {
+  background-color: #fff;
+  cursor: pointer;
+  height: 112px;
+  padding: 24px 16px 24px 32px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-family: 'Avenir Next W01', 'Avenir Next', 'Avenir', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.pt-event-box-date a,
+.pt-event-box-date a:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+.pt-event-box-date span {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: text-top;
+  white-space: nowrap;
+  width: calc(100% - 30px);
+}
+.pt-event-box-date img {
+  display: inline;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.pt-event-box-date a img {
+  display: inline;
+}
+.pt-event-box-venue {
+  margin-top: 8px;
+}
+.pt-event-box-footer {
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  height: 64px;
+  padding: 21px 32px 0;
+  position: relative;
+  z-index: 0;
+}
+.pt-event-box-footer > span img {
+  vertical-align: middle;
+}
+.pt-event-box-footer > span span {
+  margin-left: 4px;
+  vertical-align: text-top;
+}
+.pt-event-box-footer > div {
+  float: left;
+  margin-right: 16px;
+}
+.pt-event-box-footer a {
+  color: rgba(0, 0, 0, 0.54);
+}
+.pt-event-box-footer a:hover {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.pt-event-box-footer i {
+  line-height: 1;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.pt-event-box-footer .dropdown-menu {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0;
+  display: block;
+  float: left;
+  font-size: 16px;
+  height: 216px;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  min-width: 160px;
+  padding: 8px 0 0;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.pt-event-box-footer .dropdown-menu li {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  margin: 0;
+}
+.pt-event-box-footer .dropdown-menu li a {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  line-height: 3;
+  padding: 0 16px 0 32px;
+}
+.pt-event-box-footer .dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+  }
+.pt-event-box-footer .dropdown-menu li span {
+  vertical-align: middle;
+}
+.pt-event-box-footer .dropdown-menu li img {
+  display: inline;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.pt-event-box-footer .dropdown-menu li a img {
+  display: inline;
+}
+.pt-event-box-footer .dropdown-menu li.last-menu-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  bottom: 0;
+  height: 64px;
+  line-height: 4;
+  margin-top: 8px;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+.pt-event-box-footer .dropdown-menu li.last-menu-item a {
+  line-height: 4;
+}
+.event-list-container > ul {
+  margin: 40px 0 !important;
+}
+.event-list-container i {
+  vertical-align: middle;
+}
+.event-list-container .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+.event-list-item {
+  margin-right: 16px;
+}
+@media (max-width: 767px) {
+  .pt-event-box {
+    border-radius: 0;
+    margin: 0 -15px;
+    max-width: none;
+  }
+  .pt-event-box-img {
+    border-radius: 0;
+  }
+}
+
+
+/* ==========================================================================
+  02 - Mobile
+========================================================================== */
+
+@media (max-width: 480px) {
+  .pt-event-box-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
